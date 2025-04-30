@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600&display=swap');
+
+/* Global Styles */
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Navbar */
+.navbar-movie {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 10px 20px;
+  background: #000;
+  border-bottom: 1px solid #222;
+}
+
+.navbar-movie a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 16px;
+  font-size: 18px;
+  font-style: italic;
+  transition: color 0.3s ease;
+}
+
+.navbar-movie a:hover {
+  color: #ff1a1a;
+}
+
+.navbar-movie h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 32px;
+  color: #ff1a1a;
+  margin: 0;
+}
+
+/* Hero Section */
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.container img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(40%);
+}
+
+.container .content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  border-top: 2px solid rgba(255, 26, 26, 0.3);
+  border-bottom: 2px solid rgba(255, 26, 26, 0.3);
+}
+
+.container .content h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 64px;
+  color: #ff1a1a;
+  margin-bottom: 20px;
+}
+
+.container .content p {
+  line-height: 1.6;
+  font-size: 18px;
+  color: #f1f1f1;
+}
+
+/* Friends and Allies Section */
+.Friend-Allies {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.Friend-Allies img {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+  filter: brightness(50%);
+  margin-bottom: 20px;
+}
+
+.Friend-Allies h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 64px;
+  color: white;
+  text-shadow: 0 0 10px #ff1a1a;
+  margin-bottom: 30px;
+}
+
+/* Card Grid Layout */
+.column {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 40px 20px;
+  justify-items: center;
+}
+
+/* Individual Card (Generic) */
+.card {
+  background-color: rgba(15, 15, 15, 0.3);
+  border: 1px solid #ff1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 12px #ff1a1a;
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card .container {
+  padding: 20px;
+  text-align: left;
+}
+
+.card h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  color: #ff1a1a;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #e0e0e0;
+  line-height: 1.4;
+}
+
+/* === Friends Component Specific === */
+.friends-section {
+  padding: 40px 20px;
+}
+
+.friends-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.friend-card {
+  background-color: #0f0f0f;
+  border: 2px solid #ff1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: 320px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.friend-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 15px #ff1a1a;
+}
+
+.friend-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  filter: brightness(85%);
+}
+
+.friend-details {
+  padding: 20px;
+  text-align: center;
+}
+
+.friend-details h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 28px;
+  color: #ff1a1a;
+  margin-bottom: 8px;
+}
+
+.friend-details h4 {
+  color: #aaa;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.friend-details p {
+  color: #eee;
+  font-size: 15px;
+  line-height: 1.4;
+}
+.jw-footer {
+  background-color: #0e0e0e;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 1px solid #550000;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.jw-footer-title {
+  font-size: 32px;
+  color: #ff1a1a;
+  margin-bottom: 10px;
+}
+
+.jw-footer-quote {
+  font-style: italic;
+  font-size: 16px;
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.jw-social-icons {
+  margin: 20px 0;
+}
+
+.jw-social-icons a {
+  color: #fff;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.jw-social-icons a:hover {
+  color: #ff1a1a;
+}
+
+.jw-footer-bottom {
+  font-size: 14px;
+  color: #666;
+  margin-top: 20px;
+}

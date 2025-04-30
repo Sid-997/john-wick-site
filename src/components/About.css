@@ -1,0 +1,44 @@
+.about-container {
+    position: relative;
+    background: url('https://images5.alphacoders.com/104/1048351.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .about-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 3rem;
+    border-radius: 16px;
+    max-width: 900px;
+    margin: 0 2rem;
+    box-shadow: 0 0 40px rgba(255, 0, 0, 0.4);
+  }
+  
+  .about-content {
+    color: #fff;
+    text-align: center;
+  }
+  
+  .about-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #e50914;
+    font-family: 'Cinzel', serif;
+  }
+  
+  .about-text {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .about-quote {
+    font-size: 1.5rem;
+    color: #f5f5f5;
+    margin-top: 2rem;
+    font-family: 'Georgia', serif;
+  }
+  

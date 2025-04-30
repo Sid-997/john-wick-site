@@ -1,0 +1,53 @@
+.car-section {
+    padding: 60px 20px;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .car-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .car-text {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .car-text h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #ff1a1a;
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .car-text p {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    font-size: 18px;
+    color: #e0e0e0;
+  }
+  
+  .car-image {
+    flex: 1;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .car-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(255, 26, 26, 0.5);
+    transition: transform 0.3s ease;
+  }
+  
+  .car-image img:hover {
+    transform: scale(1.05);
+  }
+  
